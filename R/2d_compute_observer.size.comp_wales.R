@@ -1,8 +1,7 @@
-# script to reformat size composition data as SS model input for the crab and lobster observer data - wales
+# script to reformat size composition data as SS model input for the observer data - wales
 
 # check if required packages are installed
-required <- c("readr", "dplyr", "lubridate", "tidyr", "RColorBrewer", "rgdal", "sp", 
-              "rnaturalearth", "ggplot2", "ggridges")
+required <- c("readr", "dplyr", "lubridate", "tidyr", "RColorBrewer", "rgdal", "sp", "rnaturalearth", "ggplot2", "ggridges")
 installed <- rownames(installed.packages())
 (not_installed <- required[!required %in% installed])
 install.packages(not_installed, dependencies=TRUE)
